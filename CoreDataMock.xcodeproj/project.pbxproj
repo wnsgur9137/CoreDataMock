@@ -19,6 +19,7 @@
 		A8406FBC2A28970500DD9ED1 /* FetchCoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8406FBB2A28970500DD9ED1 /* FetchCoreDataViewModel.swift */; };
 		A8406FC22A2995AF00DD9ED1 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8406FC12A2995AF00DD9ED1 /* CoreDataStorage.swift */; };
 		A8406FC72A29975100DD9ED1 /* DataInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8406FC62A29975100DD9ED1 /* DataInformation.swift */; };
+		A8406FCB2A29D47600DD9ED1 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8406FCA2A29D47600DD9ED1 /* UIViewController+Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A8406FBB2A28970500DD9ED1 /* FetchCoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCoreDataViewModel.swift; sourceTree = "<group>"; };
 		A8406FC12A2995AF00DD9ED1 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 		A8406FC62A29975100DD9ED1 /* DataInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInformation.swift; sourceTree = "<group>"; };
+		A8406FCA2A29D47600DD9ED1 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				A8406FAF2A28941C00DD9ED1 /* MainTabBarController.swift */,
 				A8406FB72A2896A600DD9ED1 /* SaveCoreData */,
 				A8406FBD2A28970900DD9ED1 /* FetchCoreData */,
+				A8406FCD2A29D48300DD9ED1 /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -147,6 +150,22 @@
 				A8406FC62A29975100DD9ED1 /* DataInformation.swift */,
 			);
 			name = Domain;
+			sourceTree = "<group>";
+		};
+		A8406FCC2A29D47A00DD9ED1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8406FCA2A29D47600DD9ED1 /* UIViewController+Alert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A8406FCD2A29D48300DD9ED1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A8406FCC2A29D47A00DD9ED1 /* Extension */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +246,7 @@
 				A8406FA02A28938100DD9ED1 /* CoreDataMock.xcdatamodeld in Sources */,
 				A8406FC72A29975100DD9ED1 /* DataInformation.swift in Sources */,
 				A8406FBA2A2896D200DD9ED1 /* FetchCoreDataViewController.swift in Sources */,
+				A8406FCB2A29D47600DD9ED1 /* UIViewController+Alert.swift in Sources */,
 				A8406FB02A28941C00DD9ED1 /* MainTabBarController.swift in Sources */,
 				A8406F982A28938100DD9ED1 /* SceneDelegate.swift in Sources */,
 			);

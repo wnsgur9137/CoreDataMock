@@ -71,7 +71,22 @@ final class SaveCoreDataViewController: UIViewController {
     }
     
     private func addSaveButtonAction() {
-        
+        guard let nickname = nicknameTextField.text,
+              let phone = phoneTextField.text,
+              let email = emailTextField.text else {
+            self.showAlertWithCancelAndConfirm(title: "CoreData 저장 실패", message: "기입하지 않은 정보가 존재합니다.") {}
+            return
+        }
+        // TODO: - PassthroughSubject로 변경
+        viewModel.convertStringIntoIntOfPhone(phone: phone) { result in
+            switch result {
+            case .success(let convertedPhone):
+                self.viewModel.saveCoreData(nickname: nickname, phone: convertedPhone, email: email)
+            case .failure(let error):
+                print("error")
+                self.showAlertWithConfirm(title: "CoreData 저장 실패", message: "정확한 핸드폰 번호를 입력해 주세요.\nError: \(error)")
+            }
+        }
     }
 }
 
